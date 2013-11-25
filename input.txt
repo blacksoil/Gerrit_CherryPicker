@@ -1,0 +1,63 @@
+# KB's UI Framework Patches
+frameworks/base
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/frameworks/base refs/changes/45/327145/5 && git cherry-pick FETCH_HEAD
+	#2
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/frameworks/base refs/changes/47/327147/4 && git cherry-pick FETCH_HEAD
+	#3
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/frameworks/base refs/changes/52/327152/3 && git cherry-pick FETCH_HEAD
+	#4
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/frameworks/base refs/changes/53/327153/3 && git cherry-pick FETCH_HEAD
+	#5
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/frameworks/base refs/changes/02/331802/4 && git cherry-pick FETCH_HEAD
+
+# KB's Launcher Patches
+packages/apps/Launcher3
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Launcher3 refs/changes/68/327868/4 && git cherry-pick FETCH_HEAD
+	#2
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Launcher3 refs/changes/69/327869/3 && git cherry-pick FETCH_HEAD
+	#3
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Launcher3 refs/changes/70/327870/2 && git cherry-pick FETCH_HEAD
+	#4
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Launcher3 refs/changes/53/331953/2 && git cherry-pick FETCH_HEAD
+
+# KB's App Settings
+packages/apps/Settings
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Settings refs/changes/54/327154/2 && git cherry-pick FETCH_HEAD
+	#2
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Settings refs/changes/55/327155/2 && git cherry-pick FETCH_HEAD
+	#3
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Settings refs/changes/04/331804/1 && git cherry-pick FETCH_HEAD
+
+# KB's vendor patch
+vendor/nvidia/build
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/vendor/nvidia/build refs/changes/71/303371/2 && git cherry-pick FETCH_HEAD
+
+# KB's device/nvidia patch
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/device/nvidia refs/changes/54/331154/5 && git cherry-pick FETCH_HEAD
+
+#Gamepad Fix
+kernel
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/linux-3.10 refs/changes/80/299280/2 && git cherry-pick FETCH_HEAD
+
+#Remove telephony
+device/nvidia
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/device/nvidia refs/changes/53/334153/1 && git cherry-pick FETCH_HEAD
+
+# Frank's Camera changes
+packages/apps/Camera2
+	#1
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/packages/apps/Camera2 refs/changes/00/334200/1 && git cherry-pick FETCH_HEAD
+
+# Frank's Camera change
+vendor/nvidia/tegra/camera-partner/imager
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/tegra/camera-partner/imager refs/changes/50/329450/12 && git cherry-pick FETCH_HEAD
+
+vendor/nvidia/tegra/core_v3
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/tegra/camera/core_v3 refs/changes/61/330261/15 && git cherry-pick FETCH_HEAD
