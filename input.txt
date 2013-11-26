@@ -37,13 +37,9 @@ vendor/nvidia/build
 	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/vendor/nvidia/build refs/changes/71/303371/2 && git cherry-pick FETCH_HEAD
 
 # KB's device/nvidia patch
+device/nvidia
 	#1
 	git fetch ssh://aharijanto@git-master.nvidia.com:12001/android/platform/device/nvidia refs/changes/54/331154/5 && git cherry-pick FETCH_HEAD
-
-#Gamepad Fix
-kernel
-	#1
-	git fetch ssh://aharijanto@git-master.nvidia.com:12001/linux-3.10 refs/changes/80/299280/2 && git cherry-pick FETCH_HEAD
 
 #Remove telephony
 device/nvidia
@@ -59,5 +55,16 @@ packages/apps/Camera2
 vendor/nvidia/tegra/camera-partner/imager
 	git fetch ssh://aharijanto@git-master.nvidia.com:12001/tegra/camera-partner/imager refs/changes/50/329450/12 && git cherry-pick FETCH_HEAD
 
-vendor/nvidia/tegra/core_v3
+# Frank's Camera change
+vendor/nvidia/tegra/camera/core_v3
 	git fetch ssh://aharijanto@git-master.nvidia.com:12001/tegra/camera/core_v3 refs/changes/61/330261/15 && git cherry-pick FETCH_HEAD
+
+
+# MG's screen corruption fix
+vendor/nvidia/tegra/gpu/drv
+	git fetch ssh://aharijanto@git-p4swmirror.nvidia.com:14006/p4swmirror/tegra/gpu/drv refs/changes/18/1818/1 && git cherry-pick FETCH_HEAD
+	git fetch ssh://aharijanto@git-p4swmirror.nvidia.com:14006/p4swmirror/tegra/gpu/drv refs/changes/19/1819/1 && git cherry-pick FETCH_HEAD
+
+# Sang's stability fix
+kernel
+	git fetch ssh://aharijanto@git-master.nvidia.com:12001/linux-3.10 refs/changes/83/335283/1 && git cherry-pick FETCH_HEAD
